@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Área do Triângulo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- TELA 1: formulário -->
+    <div class="tela ativa" id="tela-form">
+
+      <svg class="icone" viewBox="0 0 512 512" fill="none" stroke="currentColor"
+           stroke-width="26" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M14 14 L498 498 L14 498 Z"/>
+        <path d="M100 232 L282 410 L100 410 Z"/>
+        <path d="M14 120 H66 M14 155 H40 M14 190 H66 M14 225 H40 M14 262 H66 M14 298 H40 M14 333 H66 M14 372 H40 M14 410 H66"/>
+        <path d="M100 498 V446 M135 498 V472 M172 498 V446 M208 498 V472 M245 498 V446 M282 498 V472 M318 498 V446 M355 498 V472 M392 498 V446"/>
+      </svg>
+
+      <h1>Área do Triângulo</h1>
+
+      <div class="campo">
+        <label for="base">Base</label>
+        <input type="text" id="base" inputmode="decimal" placeholder="Ex.: 10">
+      </div>
+
+      <div class="campo">
+        <label for="altura">Altura</label>
+        <input type="text" id="altura" inputmode="decimal" placeholder="Ex.: 5,5">
+      </div>
+
+      <p class="erro" id="erro" role="alert"></p>
+
+      <button type="button" id="btn-calcular">Calcular</button>
+    </div>
+
+    <!-- TELA 2: resultado -->
+    <div class="tela" id="tela-resultado">
+      <p id="titulo-resultado">A área do triângulo é</p>
+      <p id="valor-area"></p>
+      <p id="formula"></p>
+      <button type="button" id="btn-voltar">Calcular novamente</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
